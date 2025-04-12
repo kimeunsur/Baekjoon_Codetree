@@ -83,7 +83,7 @@ public class Main {
         for (int i=c-1;i>1;i--) board[top][i]=board[top][i-1];
         board[top][1]=0;
         //아래쪽
-        for (int i=bottom;i<r-1;i++) board[i][0]=board[i+1][0];
+        for (int i=bottom+1;i<r-1;i++) board[i][0]=board[i+1][0];
         for (int i=0;i<c-1;i++) board[r-1][i]=board[r-1][i+1];
         for (int i=r-1;i>bottom;i--) board[i][c-1]=board[i-1][c-1];
         for (int i=c-1;i>1;i--) board[bottom][i]=board[bottom][i-1];
