@@ -8,8 +8,7 @@ dic = {'W':0, 'E':1, 'S':2, 'N':3}
 for i in range(n):
     d = dic[dir[i]]
     w = dist[i]
-    for j in range(w):
-        x+=dxy[d][0]
-        y+=dxy[d][1]
+    x+=dxy[d][0]*w
+    y+=dxy[d][1]*w
     
 print(x,y)
